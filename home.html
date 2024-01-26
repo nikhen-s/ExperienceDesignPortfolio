@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: "Courier New", Courier, monospace;
+      font-size:50px;
+      text-align: center;
+      color: white;
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(to bottom, #033f63, #28666e, #7c9885, #b5b682, #fedc97);
+    }
+
+    #landing-text {
+      opacity: 0;
+      animation: fadeInOut 3.5s ease-in-out infinite;
+    }
+
+    @keyframes fadeInOut {
+      0%, 100% {
+        opacity: 0;
+      }
+      50% {
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="landing-text">By: Nikhen Sanjaya Nyo</div>
+
+  <script>
+    // JavaScript to control the fading in and out
+    document.addEventListener('DOMContentLoaded', function() {
+      setTimeout(() => {
+        document.getElementById('landing-text').style.opacity = 1;
+        setTimeout(() => {
+            // Redirect to the new page after animations
+            window.location.href = 'about.html';
+          }, 2500);
+      }, 1000); // Wait for 1 second before fading in landing text
+    });
+  </script>
+</body>
+</html>

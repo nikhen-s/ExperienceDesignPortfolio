@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<style>
+    body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-family: 'TT Fors', sans-serif;
+    background: linear-gradient(to right, #033f63 50%, #ff8e00 50%);
+    color: #ffffff;
+    
+    }
+    .alignProblem{
+        width: 50%;
+        left: 0;
+        position: absolute;
+        text-align: center;
+
+    }
+    .alignSolution {
+      position: absolute;
+      left: 50%;
+      
+      text-align: center;
+      width: 50%;
+    }
+    .photo{
+        width:400px;
+    }
+    .alignCenter {
+
+    color: #ffffff;
+    margin: 0;
+    padding: 100px;
+    font-family: 'TT Fors', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+#top-bar {
+    width: 100%;
+    font-weight: bold;
+    font-style:italic;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: white;
+    color: black;
+    text-align: center;
+    padding: 20px;
+    font-size: 24px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  }
+  button {
+    background-color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #134273; /* Darker shade for hover effect */
+}
+
+</style>
+<body>
+    <div id="top-bar">Week 3, Instruments</div>
+    <div class="alignProblem">
+        <br>
+        <h2>Design By Analogy</h2>
+        <img width="550px" src="Images/Week3Prob1.png" alt="Your Photo">
+        <br>
+        <div class="caption">
+        <br>
+        <p>
+            This week, we explored design by analogy. We drew a parallel between the use of signs by air hostesses to communicate important information in noisy airplane cabins and the use of signs by architect to convey their design concepts. The proposed solution introduces a software that utilizes both audio and visual cues provided by the architect to construct a detailed 3D model of the project in real-time. 
+        </p>
+    </div>
+    </div>
+    <div class="alignSolution">
+        <br>
+        <h2>Solution</h2>
+        <img width="600px" src="Images/Week3Sol1.png" alt="Your Photo">
+        <div class="caption">
+            <h2>
+                Human Speech & Gesture to Hologram Software
+            </h2>
+            <p>
+                Our software is designed to enhance communication by analyzing human gestures and speech, converting them into dynamic 3D holographic images in real-time. These holographic representations materialize before the speaker through a projector, offering valuable visual aids for their audience. The primary objective of this software is to tackle the issue of miscommunication between architects and clients lacking architectural expertise, ultimately streamlining the understanding of complex architectural ideas and saving valuable time.
+<br>
+<br>
+<br>
+///someone talking to a software about architecture that generates an animation out of their speech style raw
+</p>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="buttonContainer" style="text-align: right;margin-right:70px;">
+            <button onclick="showNextPage()">Week 4</button>
+          </div>
+    
+    </div>
+    
+
+    <script>
+        function showNextPage() {
+            document.body.style.backgroundColor = "#000"; // Change background to dark
+            window.location.href = "week4.html"; // Redirect to the next page
+        };
+    </script>
+</body>
+<body>
+    
+
+</html>
